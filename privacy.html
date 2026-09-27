@@ -25,7 +25,7 @@
 <!-- ================= English ================= -->
 <article lang="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 26, 2026</p>
+    <p class="updated">Last updated: September 27, 2026</p>
 
     <p>RiftSense is an Overwolf app for League of Legends. This policy explains what data RiftSense uses,
         where it is kept and what, if anything, leaves your computer.</p>
@@ -41,20 +41,31 @@
             the in-game widget and your stats.</li>
         <li><strong>Your profile</strong> (Riot ID, profile icon, level and Solo/Duo rank), read only from the
             League of Legends client running on your computer.</li>
+        <li><strong>The enemy champions in champion select</strong>, read from the same client, to show your notes
+            about them before the game starts.</li>
         <li><strong>Your game settings</strong> (the <code>game.cfg</code> file of League of Legends), read only,
             to place the timers on your minimap.</li>
     </ul>
 
     <h2>Data stored on your computer</h2>
     <ul>
-        <li>Your match history and end-of-game stats, in <code>%USERPROFILE%\.lol-overlay\matches.json</code>.</li>
+        <li>Your match history and end-of-game stats, in <code>%USERPROFILE%\.lol-overlay\matches.json</code>. For each
+            game recorded by the app this also includes the goals you picked and their result, the times of your deaths
+            and your teammates' Riot IDs and champions, used for the <em>Your habits</em> and <em>Who you play with</em>
+            sections.</li>
+        <li>Your matchup notes (the text you write about a champion, with the champion you were playing), in
+            <code>%USERPROFILE%\.lol-overlay\notes.json</code>.</li>
         <li>Your Solo/Duo rank over time (tier, division, LP, wins and losses, with your Riot ID), in
             <code>%USERPROFILE%\.lol-overlay\rank-history.json</code>, to show your LP progress.</li>
-        <li>Your settings, your last profile and the minimap positions, in the app's local storage inside Overwolf.</li>
+        <li>Your settings, your personal goals, your last profile and the minimap positions, in the app's local
+            storage inside Overwolf.</li>
     </ul>
+    <p>Images you create with <em>Wrapped</em> are saved to your computer or copied to your clipboard only when you
+        click the button, and you decide where to share them. Voice alerts are played from audio files included in the
+        app (or by the Windows voice, if you choose it): nothing is sent anywhere.</p>
     <p>This data is never sent to us. In the app, <em>Settings → General → Clear data and restart</em> deletes your
         settings and saved data; to delete your match history, open <em>Settings → Privacy → Open data folder</em> and
-        delete <code>matches.json</code> and <code>rank-history.json</code>. Uninstalling RiftSense removes the app's local storage.</p>
+        delete <code>matches.json</code>, <code>rank-history.json</code> and <code>notes.json</code>. Uninstalling RiftSense removes the app's local storage.</p>
 
     <h2>Data that leaves your computer</h2>
     <ul>
@@ -76,7 +87,8 @@
     <h2>What we don't do</h2>
     <ul>
         <li>We don't sell your data and we don't share it with anyone except as described above.</li>
-        <li>We don't collect data about other players beyond what the game shows you during a match.</li>
+        <li>We don't collect data about other players beyond what the game shows you during a match. Your teammates'
+            Riot IDs and champions are kept only in your own match history, on your computer, and never sent to us.</li>
         <li>We don't use analytics or tracking of our own.</li>
     </ul>
 
@@ -103,7 +115,7 @@
 <!-- ================= Italiano ================= -->
 <article lang="it">
     <h1>Privacy policy</h1>
-    <p class="updated">Ultimo aggiornamento: 26 settembre 2026</p>
+    <p class="updated">Ultimo aggiornamento: 27 settembre 2026</p>
 
     <p>RiftSense è un'app Overwolf per League of Legends. Questa informativa spiega quali dati usa RiftSense,
         dove vengono tenuti e cosa, eventualmente, esce dal tuo computer.</p>
@@ -119,20 +131,31 @@
             in partita e le tue statistiche.</li>
         <li><strong>Il tuo profilo</strong> (Riot ID, icona, livello e rank Solo/Duo), letto solo dal client di
             League of Legends aperto sul tuo computer.</li>
+        <li><strong>I campioni avversari in selezione campioni</strong>, letti dallo stesso client, per mostrarti le
+            tue note su di loro prima che inizi la partita.</li>
         <li><strong>Le impostazioni del gioco</strong> (il file <code>game.cfg</code> di League of Legends), in sola
             lettura, per posizionare i timer sulla minimappa.</li>
     </ul>
 
     <h2>Dati salvati sul tuo computer</h2>
     <ul>
-        <li>Lo storico delle partite e le statistiche di fine partita, in <code>%USERPROFILE%\.lol-overlay\matches.json</code>.</li>
+        <li>Lo storico delle partite e le statistiche di fine partita, in <code>%USERPROFILE%\.lol-overlay\matches.json</code>.
+            Per ogni partita registrata dall'app contiene anche gli obiettivi che hai scelto con il loro esito, i momenti
+            delle tue morti e i Riot ID e i campioni dei tuoi compagni di squadra, usati per le sezioni <em>Le tue
+            abitudini</em> e <em>Con chi giochi</em>.</li>
+        <li>Le tue note sui matchup (il testo che scrivi su un campione, con il campione che stavi giocando), in
+            <code>%USERPROFILE%\.lol-overlay\notes.json</code>.</li>
         <li>Il tuo rank Solo/Duo nel tempo (tier, divisione, LP, vittorie e sconfitte, con il tuo Riot ID), in
             <code>%USERPROFILE%\.lol-overlay\rank-history.json</code>, per mostrare l'andamento dei LP.</li>
-        <li>Le impostazioni, l'ultimo profilo letto e le posizioni sulla minimappa, nella memoria locale dell'app in Overwolf.</li>
+        <li>Le impostazioni, i tuoi obiettivi personali, l'ultimo profilo letto e le posizioni sulla minimappa, nella
+            memoria locale dell'app in Overwolf.</li>
     </ul>
+    <p>Le immagini che crei con <em>Wrapped</em> vengono salvate sul tuo computer o copiate negli appunti solo quando
+        premi il pulsante, e decidi tu dove condividerle. Gli avvisi vocali usano file audio inclusi nell'app (o la voce
+        di Windows, se la scegli): non viene inviato niente.</p>
     <p>Questi dati non ci vengono mai inviati. Nell'app, <em>Impostazioni → Generale → Cancella dati e riavvia</em>
         cancella le impostazioni e i dati salvati; per cancellare lo storico partite apri <em>Impostazioni → Privacy →
-        Apri cartella dati</em> ed elimina <code>matches.json</code> e <code>rank-history.json</code>. Disinstallando RiftSense si cancella la memoria
+        Apri cartella dati</em> ed elimina <code>matches.json</code>, <code>rank-history.json</code> e <code>notes.json</code>. Disinstallando RiftSense si cancella la memoria
         locale dell'app.</p>
 
     <h2>Dati che escono dal tuo computer</h2>
@@ -155,7 +178,8 @@
     <h2>Cosa non facciamo</h2>
     <ul>
         <li>Non vendiamo i tuoi dati e non li condividiamo con nessuno, salvo quanto descritto sopra.</li>
-        <li>Non raccogliamo dati sugli altri giocatori oltre a quello che il gioco ti mostra durante la partita.</li>
+        <li>Non raccogliamo dati sugli altri giocatori oltre a quello che il gioco ti mostra durante la partita. I Riot ID
+            e i campioni dei tuoi compagni restano solo nel tuo storico, sul tuo computer, e non ci vengono mai inviati.</li>
         <li>Non usiamo strumenti di analisi o tracciamento nostri.</li>
     </ul>
 
