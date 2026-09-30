@@ -13,6 +13,7 @@
     <div class="wrap">
         <a class="brand" href="./"><img src="assets/logo.svg" alt="">RiftSense</a>
         <nav>
+            <a href="download.html">Download</a>
             <a href="privacy.html"><span lang="en">Privacy</span><span lang="it">Privacy</span></a>
             <a href="terms.html"><span lang="en">Terms</span><span lang="it">Termini</span></a>
             <a href="https://discord.gg/ByeUC7WYbb">Discord</a>
@@ -28,37 +29,83 @@
         <p lang="en">Keeps track of what League of Legends doesn't show you, so you can focus on playing.</p>
         <p lang="it">Tiene traccia di quello che League of Legends non ti mostra, così pensi solo a giocare.</p>
         <div class="buttons">
-            <a class="button primary" href="https://discord.gg/ByeUC7WYbb"><span lang="en">Join our Discord</span><span lang="it">Entra nel nostro Discord</span></a>
+            <a class="button primary" href="download.html">Download</a>
+            <a class="button" href="https://discord.gg/ByeUC7WYbb"><span lang="en">Join our Discord</span><span lang="it">Entra nel nostro Discord</span></a>
         </div>
     </section>
 
-    <img class="hero-image" src="assets/hero.png" alt="RiftSense" width="1920" height="560">
+    <section class="showcase" aria-label="RiftSense">
+        <div class="showcase-tabs" role="tablist">
+            <button class="showcase-tab active" role="tab" id="tab-timers" aria-controls="slide-timers" aria-selected="true"><span lang="en">Timers</span><span lang="it">Timer</span></button>
+            <button class="showcase-tab" role="tab" id="tab-history" aria-controls="slide-history" aria-selected="false"><span lang="en">Match history</span><span lang="it">Storico</span></button>
+            <button class="showcase-tab" role="tab" id="tab-account" aria-controls="slide-account" aria-selected="false"><span lang="en">Account</span><span lang="it">Account</span></button>
+            <button class="showcase-tab" role="tab" id="tab-champions" aria-controls="slide-champions" aria-selected="false"><span lang="en">Champions</span><span lang="it">Campioni</span></button>
+            <button class="showcase-tab" role="tab" id="tab-wrapped" aria-controls="slide-wrapped" aria-selected="false"><span lang="en">Wrapped</span><span lang="it">Wrapped</span></button>
+        </div>
+        <div class="showcase-stage">
+            <button class="showcase-arrow prev" aria-label="Previous">&#8249;</button>
+            <figure class="showcase-slide narrow" role="tabpanel" id="slide-timers" aria-labelledby="tab-timers">
+                <img src="assets/screens/minimap.jpg" alt="Timers on your minimap">
+                <figcaption>
+                    <h3><span lang="en">Timers on your minimap</span><span lang="it">Timer sulla minimappa</span></h3>
+                    <p lang="en">Every jungle camp, Dragon, Baron, Void Grubs, Rift Herald, inhibitors and Nexus turrets, with a live countdown right on their spot. In game you also get a small widget with your goals, your matchup notes and the enemy summoner spells you mark when they're used.</p>
+                    <p lang="it">Tutti i campi della giungla, Drago, Barone, Larve del Vuoto, Araldo, inibitori e torri del Nexus, con il conto alla rovescia proprio al loro posto. In partita hai anche un piccolo widget con i tuoi obiettivi, le tue note sui matchup e gli incantesimi nemici che segni quando li usano.</p>
+                </figcaption>
+            </figure>
+            <figure class="showcase-slide" role="tabpanel" id="slide-history" aria-labelledby="tab-history" hidden>
+                <img src="assets/screens/history.jpg" alt="Match history" loading="lazy">
+                <figcaption>
+                    <h3><span lang="en">Match history</span><span lang="it">Storico partite</span></h3>
+                    <p lang="en">Every game as a match card: result, queue, KDA, CS, kill participation, objectives and your per-game goals. On top, your last session and your last 10 games at a glance.</p>
+                    <p lang="it">Ogni partita con esito, coda, KDA, CS, partecipazione alle uccisioni, obiettivi e i tuoi obiettivi personali. In alto, l'ultima sessione e le ultime 10 partite a colpo d'occhio.</p>
+                </figcaption>
+            </figure>
+            <figure class="showcase-slide" role="tabpanel" id="slide-account" aria-labelledby="tab-account" hidden>
+                <img src="assets/screens/account.jpg" alt="Account statistics" loading="lazy">
+                <figcaption>
+                    <h3><span lang="en">Account statistics</span><span lang="it">Statistiche account</span></h3>
+                    <p lang="en">Your Solo/Duo LP over time, your peak rank and your last 10 games compared to the 10 before: are you playing better or worse?</p>
+                    <p lang="it">I tuoi LP in Solo/Duo nel tempo, il rank massimo e le ultime 10 partite a confronto con le 10 precedenti: stai giocando meglio o peggio?</p>
+                </figcaption>
+            </figure>
+            <figure class="showcase-slide" role="tabpanel" id="slide-champions" aria-labelledby="tab-champions" hidden>
+                <img src="assets/screens/champions.jpg" alt="Champion statistics" loading="lazy">
+                <figcaption>
+                    <h3><span lang="en">Champion statistics</span><span lang="it">Statistiche campioni</span></h3>
+                    <p lang="en">Win rate, KDA, CS and kill participation for every champion you play, filtered by queue and role.</p>
+                    <p lang="it">Vittorie, KDA, CS e partecipazione alle uccisioni per ogni campione che giochi, filtrabili per coda e ruolo.</p>
+                </figcaption>
+            </figure>
+            <figure class="showcase-slide" role="tabpanel" id="slide-wrapped" aria-labelledby="tab-wrapped" hidden>
+                <img src="assets/screens/wrapped.jpg" alt="RiftSense Wrapped" loading="lazy">
+                <figcaption>
+                    <h3><span lang="en">RiftSense Wrapped</span><span lang="it">RiftSense Wrapped</span></h3>
+                    <p lang="en">Your week, month or season in one image to share on Discord, Instagram or TikTok.</p>
+                    <p lang="it">La tua settimana, il tuo mese o la tua stagione in un'immagine da condividere su Discord, Instagram o TikTok.</p>
+                </figcaption>
+            </figure>
+            <button class="showcase-arrow next" aria-label="Next">&#8250;</button>
+        </div>
+    </section>
 
-    <section class="features">
-        <div class="feature">
-            <h3 lang="en">Timers on your minimap</h3>
-            <h3 lang="it">Timer sulla minimappa</h3>
-            <p lang="en">Every jungle camp, Dragon, Baron, Void Grubs, Rift Herald, inhibitors and Nexus turrets, with a live countdown right where you look.</p>
-            <p lang="it">Tutti i campi della giungla, Drago, Barone, Larve del Vuoto, Araldo, inibitori e torri del Nexus, con il conto alla rovescia proprio dove guardi.</p>
-        </div>
-        <div class="feature">
-            <h3 lang="en">In-game widget</h3>
-            <h3 lang="it">Widget in partita</h3>
-            <p lang="en">Item value of both teams and your lane, active Baron and Elder buffs, and enemy summoner spells you mark when they're used.</p>
-            <p lang="it">Valore oggetti delle squadre e della tua lane, buff di Barone e Anziano attivi e incantesimi nemici che segni quando li usano.</p>
-        </div>
-        <div class="feature">
-            <h3 lang="en">Your profile and history</h3>
-            <h3 lang="it">Profilo e storico</h3>
-            <p lang="en">Your rank, every game saved as a match card, averages of your last 10 games and stats per champion and per role.</p>
-            <p lang="it">Il tuo rank, ogni partita salvata, le medie delle ultime 10 partite e le statistiche per campione e per ruolo.</p>
-        </div>
+    <section class="spotlight">
+        <h2 lang="en">Your whole match history, not just the games you played with the app</h2>
+        <h2 lang="it">Tutto il tuo storico, non solo le partite giocate con l'app</h2>
+        <p lang="en">RiftSense reads your recent games from Riot's official API, so your history, win rate and
+            per-champion and per-role stats also include the games you played without RiftSense open. It only looks
+            up the account signed in to your League client, and the Riot API key stays on our server, never in the app.</p>
+        <p lang="it">RiftSense legge le tue partite recenti dall'API ufficiale di Riot: storico, percentuale di vittorie e
+            statistiche per campione e per ruolo comprendono anche le partite giocate senza RiftSense aperta. Cerca solo
+            l'account connesso al tuo client di League, e la chiave dell'API Riot resta sul nostro server, mai nell'app.</p>
+        <p class="muted" lang="en">Available as soon as Riot approves our production API key.</p>
+        <p class="muted" lang="it">Disponibile appena Riot approva la nostra chiave API di produzione.</p>
     </section>
 </main>
 
 <footer>
     <div class="wrap">
         <div class="links">
+            <a href="download.html">Download</a>
             <a href="privacy.html"><span lang="en">Privacy policy</span><span lang="it">Privacy policy</span></a>
             <a href="terms.html"><span lang="en">Terms of use</span><span lang="it">Termini d'uso</span></a>
             <a href="https://discord.gg/ByeUC7WYbb">Discord</a>
@@ -68,5 +115,6 @@
     </div>
 </footer>
 <script src="lang.js"></script>
+<script src="showcase.js"></script>
 </body>
 </html>

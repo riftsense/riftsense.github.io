@@ -13,6 +13,7 @@
     <div class="wrap">
         <a class="brand" href="./"><img src="assets/logo.svg" alt="">RiftSense</a>
         <nav>
+            <a href="download.html">Download</a>
             <a class="active" href="privacy.html"><span lang="en">Privacy</span><span lang="it">Privacy</span></a>
             <a href="terms.html"><span lang="en">Terms</span><span lang="it">Termini</span></a>
             <a href="https://discord.gg/ByeUC7WYbb">Discord</a>
@@ -25,14 +26,14 @@
 <!-- ================= English ================= -->
 <article lang="en">
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: September 27, 2026</p>
+    <p class="updated">Last updated: September 30, 2026</p>
 
     <p>RiftSense is an Overwolf app for League of Legends. This policy explains what data RiftSense uses,
         where it is kept and what, if anything, leaves your computer.</p>
 
-    <div class="note">In short: RiftSense has no accounts and no servers of its own. Your game data and
-        match history stay on your computer. The only thing we receive is a bug report, and only if you
-        choose to send one.</div>
+    <div class="note">In short: RiftSense has no accounts. Your game data and match history stay on your
+        computer. Our only server looks up your own recent games on Riot's official API; it keeps no database
+        and nothing about you. The only thing we keep is a bug report, and only if you choose to send one.</div>
 
     <h2>Data RiftSense reads on your computer</h2>
     <ul>
@@ -75,6 +76,15 @@
             private channel on our Discord server through a Discord webhook, so it is also processed by Discord under
             <a href="https://discord.com/privacy">Discord's privacy policy</a>. We use it only to fix the problem and,
             if you left a contact, to reply to you.</li>
+        <li><strong>Your recent games from Riot.</strong> To show the games you played without RiftSense open, the app
+            sends the Riot ID and region of the account signed in to the League client to our server (hosted on
+            Cloudflare Workers). The server asks Riot's official API (<code>ACCOUNT-V1</code>, <code>MATCH-V5</code>) for
+            that account's recent games and sends them back to the app. The server has no database: to limit calls to
+            Riot, it keeps Riot's answers in Cloudflare's cache for a short time (the list of games for 2 minutes,
+            finished games for up to 30 days) and then they are deleted automatically. The app only asks for the
+            account signed in to your League client, never for other players. Like any website, Cloudflare receives
+            your IP address with the request, under the
+            <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a>; we don't log it.</li>
         <li><strong>Champion images</strong> are downloaded from Riot Games' public Data Dragon service
             (<code>ddragon.leagueoflegends.com</code>). Like any website, Riot's servers receive your IP address with
             the request; no game or personal data is sent.</li>
@@ -115,14 +125,15 @@
 <!-- ================= Italiano ================= -->
 <article lang="it">
     <h1>Privacy policy</h1>
-    <p class="updated">Ultimo aggiornamento: 27 settembre 2026</p>
+    <p class="updated">Ultimo aggiornamento: 30 settembre 2026</p>
 
     <p>RiftSense è un'app Overwolf per League of Legends. Questa informativa spiega quali dati usa RiftSense,
         dove vengono tenuti e cosa, eventualmente, esce dal tuo computer.</p>
 
-    <div class="note">In breve: RiftSense non ha account né server propri. I dati di gioco e lo storico delle
-        partite restano sul tuo computer. L'unica cosa che riceviamo è una segnalazione di bug, e solo se decidi
-        di inviarla.</div>
+    <div class="note">In breve: RiftSense non ha account. I dati di gioco e lo storico delle partite restano sul
+        tuo computer. Il nostro unico server cerca le tue partite recenti sull'API ufficiale di Riot; non ha un
+        database e non conserva niente su di te. L'unica cosa che teniamo è una segnalazione di bug, e solo se
+        decidi di inviarla.</div>
 
     <h2>Dati che RiftSense legge sul tuo computer</h2>
     <ul>
@@ -166,6 +177,15 @@
             canale privato del nostro server Discord tramite un webhook di Discord, quindi viene trattata anche da Discord
             secondo la <a href="https://discord.com/privacy">privacy policy di Discord</a>. La usiamo solo per correggere
             il problema e, se hai lasciato un contatto, per risponderti.</li>
+        <li><strong>Le tue partite recenti da Riot.</strong> Per mostrare le partite giocate senza RiftSense aperta,
+            l'app invia al nostro server (ospitato su Cloudflare Workers) il Riot ID e la regione dell'account connesso
+            al client di League. Il server chiede all'API ufficiale di Riot (<code>ACCOUNT-V1</code>, <code>MATCH-V5</code>)
+            le partite recenti di quell'account e le rimanda all'app. Il server non ha un database: per limitare le
+            richieste a Riot tiene le risposte di Riot nella cache di Cloudflare per poco tempo (l'elenco delle partite
+            per 2 minuti, le partite finite fino a 30 giorni) e poi vengono cancellate da sole. L'app chiede solo le
+            partite dell'account connesso al tuo client di League, mai quelle di altri giocatori. Come per qualsiasi
+            sito, Cloudflare riceve il tuo indirizzo IP con la richiesta, secondo la
+            <a href="https://www.cloudflare.com/privacypolicy/">privacy policy di Cloudflare</a>; noi non lo registriamo.</li>
         <li><strong>Le immagini dei campioni</strong> vengono scaricate dal servizio pubblico Data Dragon di Riot Games
             (<code>ddragon.leagueoflegends.com</code>). Come per qualsiasi sito, i server di Riot ricevono il tuo
             indirizzo IP con la richiesta; non vengono inviati dati di gioco o personali.</li>

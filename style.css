@@ -94,6 +94,62 @@ nav a:hover, nav a.active { color: var(--accent); }
 .feature h3 { margin: 0 0 6px; font-size: 17px; color: var(--accent); }
 .feature p { margin: 0; font-size: 15px; color: var(--text-muted); }
 
+.spotlight { margin: 40px 0; padding: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
+.spotlight h2 { margin: 0 0 10px; font-size: 24px; line-height: 1.25; }
+.spotlight p { margin: 0 0 10px; color: #d8dcf0; }
+.spotlight .muted { font-size: 14px; color: var(--text-muted); }
+.spotlight.coming { text-align: center; border-color: var(--accent); background: var(--accent-bg); }
+.spotlight.coming .buttons { margin-top: 16px; }
+
+/* ---- Vetrina: un pulsante per funzione, uno screenshot alla volta ---- */
+.showcase { margin: 8px 0 40px; }
+.showcase-tabs { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 20px; }
+.showcase-tab {
+  padding: 8px 16px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.showcase-tab:hover { color: var(--text); border-color: var(--accent); }
+.showcase-tab.active { color: var(--text-on-accent); background: var(--accent); border-color: var(--accent); }
+.showcase-stage { position: relative; padding: 0 52px; }
+.showcase-slide { margin: 0; }
+/* Stessa altezza per tutti gli screenshot: cambiando funzione la pagina non salta */
+.showcase-slide img {
+  display: block;
+  width: 100%;
+  height: 460px;
+  object-fit: contain;
+  object-position: center top;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.showcase-slide figcaption { max-width: 640px; margin: 18px auto 0; text-align: center; }
+.showcase-slide h3 { margin: 0 0 6px; font-size: 20px; color: var(--accent); }
+.showcase-slide p { margin: 0; color: var(--text-muted); }
+.showcase-arrow {
+  position: absolute;
+  top: 210px;
+  width: 40px;
+  height: 40px;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border-strong);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.showcase-arrow:hover { border-color: var(--accent); color: var(--accent); }
+.showcase-arrow.prev { left: 0; }
+.showcase-arrow.next { right: 0; }
+
 /* ---- Pagine di testo (privacy, termini) ---- */
 .doc { padding: 40px 0 24px; }
 .doc h1 { margin: 0 0 4px; font-size: 34px; }
@@ -119,4 +175,7 @@ footer p { margin: 0; }
   .hero { padding-top: 36px; }
   .hero h1 { font-size: 34px; }
   .doc h1 { font-size: 28px; }
+  .showcase-stage { padding: 0 40px; }
+  .showcase-slide img { height: 260px; }
+  .showcase-arrow { top: 110px; width: 32px; height: 32px; font-size: 20px; }
 }
